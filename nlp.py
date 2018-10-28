@@ -2,23 +2,37 @@
 import nltk
 import csv
 import pandas
-
-nltk.download()
-
+from nltk.tokenize import word_tokenize
 
 
 
-# bi-grams-NL = ["de", "en", ""]
+# bi-grams-NL = ["de", "en", "ik"]
 # bi-grams-FR = ["Tu", "es"]
 # bi-grams-DU = [""]
 # bi-grams-EN = [""]
 # tri-grams-NL = [""]
 # tri-grams-FR = [""]
-# tri-grams-DU = [""]
+# tri-grams-DU = ["Das"]
 # tri-grams-EN = [""]
 
 
-# # Functie voor het inladen van een een tekst
+Italiaans = open("C:/Users/Dennis Pieruschka/Desktop/Natural Language Processing/Italiaans.txt", 'r')
+
+for line in Italiaans:
+    lijst = []
+    lijst.append(line)
+
+
+
+
+print(word_tokenize(lijst))
+
+
+
+# Convert text to Digram Trigram
+
+#def Convert()
+
 
 
 
@@ -64,6 +78,4 @@ nltk.download()
 
 
 
-# if __name__ == '__main__':
-#     main()
-    
+
